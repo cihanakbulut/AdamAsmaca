@@ -2,7 +2,7 @@ const word_el = document.getElementById('word');
 const popup = document.getElementById('popup-container');
 const message_el = document.getElementById('success-message');
 const wrongLetters_el = document.getElementById('wrong-letters');
-const items = document.querySelectorAll('item');
+const items = document.querySelectorAll('.item');
 
 const correctLetters = [];
 const wrongLetters = [];
@@ -47,7 +47,7 @@ items.forEach((item,index) => {
     if(index<errorCount){
         item.style.display = 'block';
     } else{
-        item.style.display ='none';
+        item.style.display = 'none';
     }
     
 })
