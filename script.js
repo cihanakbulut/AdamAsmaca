@@ -36,7 +36,7 @@ function displayWord() {
             }
            
 } 
-a
+
 function updateWrongLetters(){
 wrongLetters_el.innerHTML = `
 ${wrongLetters.length>0?'<h3>Hatalı Harfler<h3>':''}
@@ -51,6 +51,10 @@ items.forEach((item,index) => {
     }
     
 })
+if(wrongLetters.length === item.length){
+    popup.style.display = 'flex';
+    message_el.innerText = 'Maalesef Kaybettiniz';
+}
 }
 
 window.addEventListener('keydown', function(e){
