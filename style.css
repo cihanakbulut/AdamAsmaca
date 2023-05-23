@@ -51,4 +51,5 @@ stroke-width: 4px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-kerning: normal;
 }
